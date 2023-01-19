@@ -21,9 +21,6 @@
         include 'common/navigation.php' ;
         
         switch($page){
-            case !isset($page):
-                include 'content/index_content.php';
-                break;
             case $page == 'actu':
                 include 'content/index_content.php';
                 break;

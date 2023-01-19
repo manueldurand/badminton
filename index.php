@@ -1,7 +1,9 @@
 
         <?php
         $page = filter_input(INPUT_GET, "page", FILTER_SANITIZE_STRING); 
-        $_GET['page'];
+        if(!isset($page)){
+                $page='actu';
+        }
         $array = [
                 "lundi" => "18h à 22h",
                 "mardi" => "18h à 20h",
